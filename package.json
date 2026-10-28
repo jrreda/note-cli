@@ -20,5 +20,8 @@
     }
   },
   "packageManager": "pnpm@12.15.0",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "yargs": "^18.2.0"
+  }
 }
