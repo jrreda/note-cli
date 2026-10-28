@@ -7,6 +7,7 @@ import {
   removeNote,
   removeAllNotes,
 } from "./notes.js";
+import { start } from "./server.js";
 
 // Helper
 const listNotes = (notes) => {
@@ -88,11 +89,14 @@ yargs(hideBin(process.argv))
     (yargs) => {
       return yargs.positional("port", {
         describe: "port to bind on",
-        default: 5000,
+        default: 5555,
         type: "number",
       });
     },
-    async (argv) => {},
+    async (argv) => {
+      const notes = await getAllNotes();
+      start(notes, argv.port);
+    },
   )
   .command(
     "clean",
