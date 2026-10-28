@@ -1,3 +1,29 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "tags": [],
+      "content": "Go to the gym",
+      "id": 1793195374238
+    },
+    {
+      "tags": [],
+      "content": "Create node.js notes cli app",
+      "id": 1793195391890
+    },
+    {
+      "tags": [
+        "high"
+      ],
+      "content": "Study React",
+      "id": 1793195485867
+    },
+    {
+      "tags": [
+        "low",
+        "fun"
+      ],
+      "content": "Study Deutsch",
+      "id": 1793195512682
+    }
+  ]
 }
